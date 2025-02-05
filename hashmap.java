@@ -10,13 +10,14 @@ public class hashmap {
         }
         HashMap<Integer,Integer>map=new HashMap<>();
         for(int i=0;i<n;i++)
-        {
-            
+        { 
             if(map.containsKey(arr[i]))
             {
 int value=map.get(arr[i]);
 map.put(arr[i],value+1);
             }
+
+            
             else
             {
                 map.put(arr[i],1);
@@ -29,6 +30,8 @@ map.put(arr[i],value+1);
 
             max=Math.max(max,e.getValue());
         }
+
+       
         for(Map.Entry<Integer,Integer> e:map.entrySet())
         {
 
