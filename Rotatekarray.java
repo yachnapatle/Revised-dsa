@@ -24,12 +24,13 @@ public class Rotatekarray {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int arr[]= new int[7];
+        System.out.println("enter k");
         int k=sc.nextInt();
         for(int i=0;i<7;i++)
         {
             arr[i]=sc.nextInt();
         }
-       int arr1[]= rotate(arr, k);
+        int arr1[]= rotate(arr, k);
         for(int i=0;i<arr1.length;i++)
         {
             System.out.print(arr1[i] + " ");
